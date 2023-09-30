@@ -1,0 +1,296 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY untitled-ontology-2 "http://www.semanticweb.org/sherlysantiadi/ontologies/2023/8/untitled-ontology-2#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.semanticweb.org/sherlysantiadi/ontologies/2023/8/untitled-ontology-2#"
+     xml:base="http://www.semanticweb.org/sherlysantiadi/ontologies/2023/8/untitled-ontology-2"
+     xmlns:untitled-ontology-2="http://www.semanticweb.org/sherlysantiadi/ontologies/2023/8/untitled-ontology-2#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/sherlysantiadi/ontologies/2023/8/untitled-ontology-2"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/sherlysantiadi/ontologies/2023/8/untitled-ontology-2#hasMataKuliah -->
+
+    <owl:ObjectProperty rdf:about="&untitled-ontology-2;hasMataKuliah">
+        <rdf:type rdf:resource="&owl;TransitiveProperty"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-2;Jadwal"/>
+        <rdfs:range rdf:resource="&untitled-ontology-2;MataKuliah"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sherlysantiadi/ontologies/2023/8/untitled-ontology-2#hasPeriode -->
+
+    <owl:ObjectProperty rdf:about="&untitled-ontology-2;hasPeriode">
+        <rdf:type rdf:resource="&owl;TransitiveProperty"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-2;Jadwal"/>
+        <rdfs:range rdf:resource="&untitled-ontology-2;Periode"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sherlysantiadi/ontologies/2023/8/untitled-ontology-2#hasRuangan -->
+
+    <owl:ObjectProperty rdf:about="&untitled-ontology-2;hasRuangan">
+        <rdf:type rdf:resource="&owl;TransitiveProperty"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-2;Jadwal"/>
+        <rdfs:range rdf:resource="&untitled-ontology-2;Ruangan"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sherlysantiadi/ontologies/2023/8/untitled-ontology-2#hasTahunAkademik -->
+
+    <owl:ObjectProperty rdf:about="&untitled-ontology-2;hasTahunAkademik">
+        <rdf:type rdf:resource="&owl;TransitiveProperty"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-2;Jadwal"/>
+        <rdfs:range rdf:resource="&untitled-ontology-2;TahunAkademik"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sherlysantiadi/ontologies/2023/8/untitled-ontology-2#hasWaktu -->
+
+    <owl:ObjectProperty rdf:about="&untitled-ontology-2;hasWaktu">
+        <rdf:type rdf:resource="&owl;TransitiveProperty"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-2;Jadwal"/>
+        <rdfs:range rdf:resource="&untitled-ontology-2;Waktu"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sherlysantiadi/ontologies/2023/8/untitled-ontology-2#takenBy -->
+
+    <owl:ObjectProperty rdf:about="&untitled-ontology-2;takenBy">
+        <rdf:type rdf:resource="&owl;TransitiveProperty"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-2;CivitasAkademika"/>
+        <rdfs:range rdf:resource="&untitled-ontology-2;Mahasiswa"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sherlysantiadi/ontologies/2023/8/untitled-ontology-2#teachBy -->
+
+    <owl:ObjectProperty rdf:about="&untitled-ontology-2;teachBy">
+        <rdf:type rdf:resource="&owl;TransitiveProperty"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-2;CivitasAkademika"/>
+        <rdfs:range rdf:resource="&untitled-ontology-2;Dosen"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/sherlysantiadi/ontologies/2023/8/untitled-ontology-2#kodeMK -->
+
+    <owl:DatatypeProperty rdf:about="&untitled-ontology-2;kodeMK"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sherlysantiadi/ontologies/2023/8/untitled-ontology-2#namaMK -->
+
+    <owl:DatatypeProperty rdf:about="&untitled-ontology-2;namaMK"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sherlysantiadi/ontologies/2023/8/untitled-ontology-2#semester -->
+
+    <owl:DatatypeProperty rdf:about="&untitled-ontology-2;semester"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sherlysantiadi/ontologies/2023/8/untitled-ontology-2#sks -->
+
+    <owl:DatatypeProperty rdf:about="&untitled-ontology-2;sks"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/sherlysantiadi/ontologies/2023/8/untitled-ontology-2#CivitasAkademika -->
+
+    <owl:Class rdf:about="&untitled-ontology-2;CivitasAkademika">
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+        <owl:disjointWith rdf:resource="&untitled-ontology-2;Jadwal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherlysantiadi/ontologies/2023/8/untitled-ontology-2#Dosen -->
+
+    <owl:Class rdf:about="&untitled-ontology-2;Dosen">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-2;CivitasAkademika"/>
+        <owl:disjointWith rdf:resource="&untitled-ontology-2;Mahasiswa"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherlysantiadi/ontologies/2023/8/untitled-ontology-2#Jadwal -->
+
+    <owl:Class rdf:about="&untitled-ontology-2;Jadwal">
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherlysantiadi/ontologies/2023/8/untitled-ontology-2#Mahasiswa -->
+
+    <owl:Class rdf:about="&untitled-ontology-2;Mahasiswa">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-2;CivitasAkademika"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherlysantiadi/ontologies/2023/8/untitled-ontology-2#MataKuliah -->
+
+    <owl:Class rdf:about="&untitled-ontology-2;MataKuliah">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-2;Jadwal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherlysantiadi/ontologies/2023/8/untitled-ontology-2#Periode -->
+
+    <owl:Class rdf:about="&untitled-ontology-2;Periode">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-2;Jadwal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherlysantiadi/ontologies/2023/8/untitled-ontology-2#Ruangan -->
+
+    <owl:Class rdf:about="&untitled-ontology-2;Ruangan">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-2;Jadwal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherlysantiadi/ontologies/2023/8/untitled-ontology-2#TahunAkademik -->
+
+    <owl:Class rdf:about="&untitled-ontology-2;TahunAkademik">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-2;Jadwal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sherlysantiadi/ontologies/2023/8/untitled-ontology-2#Waktu -->
+
+    <owl:Class rdf:about="&untitled-ontology-2;Waktu">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-2;Jadwal"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/sherlysantiadi/ontologies/2023/8/untitled-ontology-2#AljabarLinear -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-2;AljabarLinear">
+        <rdf:type rdf:resource="&untitled-ontology-2;MataKuliah"/>
+        <semester rdf:datatype="&xsd;int">2</semester>
+        <sks rdf:datatype="&xsd;int">3</sks>
+        <namaMK rdf:datatype="&xsd;string">Aljabar Linear</namaMK>
+        <kodeMK rdf:datatype="&xsd;string">IN233</kodeMK>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sherlysantiadi/ontologies/2023/8/untitled-ontology-2#BasisDataLanjut -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-2;BasisDataLanjut">
+        <rdf:type rdf:resource="&untitled-ontology-2;MataKuliah"/>
+        <sks rdf:datatype="&xsd;string">3</sks>
+        <semester rdf:datatype="&xsd;int">4</semester>
+        <namaMK rdf:datatype="&xsd;string">Basis Data Lanjut</namaMK>
+        <kodeMK rdf:datatype="&xsd;string">IN237</kodeMK>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sherlysantiadi/ontologies/2023/8/untitled-ontology-2#MachineLearning -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-2;MachineLearning">
+        <rdf:type rdf:resource="&untitled-ontology-2;MataKuliah"/>
+        <sks rdf:datatype="&xsd;int">2</sks>
+        <semester rdf:datatype="&xsd;int">4</semester>
+        <kodeMK rdf:datatype="&xsd;string">IN242</kodeMK>
+        <namaMK rdf:datatype="&xsd;string">Kecerdasan Buatan</namaMK>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="&untitled-ontology-2;MataKuliah"/>
+            <rdf:Description rdf:about="&untitled-ontology-2;Periode"/>
+            <rdf:Description rdf:about="&untitled-ontology-2;Ruangan"/>
+            <rdf:Description rdf:about="&untitled-ontology-2;TahunAkademik"/>
+            <rdf:Description rdf:about="&untitled-ontology-2;Waktu"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+
