@@ -1,0 +1,14 @@
+PREFIX jadwal-uts: <http://www.semanticweb.org/sherlysantiadi/ontologies/2023/8/untitled-ontology-2#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?mataKuliah ?kodeMK ?namaMK ?sks ?semester
+WHERE {
+    ?mataKuliah rdf:type jadwal-uts:MataKuliah ;
+                jadwal-uts:kodeMK ?kodeMK ;
+                jadwal-uts:sks ?sks ;
+                jadwal-uts:semester ?semester ;
+                jadwal-uts:namaMK ?namaMK .
+    
+    FILTER (STR(?namaMK) = "Aljabar Linear")
+}
