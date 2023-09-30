@@ -1,2 +1,2 @@
-# owl-sparql-semantic-web
-this repository is created for semantic web using web ontology language and testing with sparql.
+# Owl SPARQL Semantic Web
+This repository is created for semantic web using Web Ontology Language and testing with SPARQL.
